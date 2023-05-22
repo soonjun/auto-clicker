@@ -1,0 +1,20 @@
+{
+	"manifest_version": 3,
+	"name": "Twitch Channel Points Button Auto Click",
+	"description": "Automatically click the Twitch Channel Points button.",
+	"version": "1.0",
+	"icons": {
+		"16": "icon16.png",
+		"48": "icon48.png",
+		"128": "icon128.png"
+	},
+	"content_scripts": [{
+		"matches": [
+			"https://www.twitch.tv/*",
+			"https://www.multitwitch.tv/*"
+		],
+		"js": [
+			"auto-click.js"
+		]
+	}]
+}
